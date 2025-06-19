@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
-function Post({ post, index, onDelete }) {
+function Post({ post, index, onDelete }: any) {
   return (
     <div className="post" style={{border: '1px solid #ccc', padding: '0px', margin: '0px', borderRadius: '15px'}}>
       <h2 style={{margin: 0, padding: 0}}>{post.title}</h2>
@@ -40,7 +40,7 @@ function App() {
     }
   }
 
-  const handleDelete = (index) => {
+  const handleDelete = (index: any) => {
     const newPosts = [...posts]
     newPosts.splice(index, 1)
     setPosts(newPosts)
