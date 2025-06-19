@@ -1,21 +1,38 @@
-# React + TypeScript + Vite
+Your task is to create a React application called "Blog Post" that allows users to create, display, and delete blog posts. The application requirements are detailed below, and the finished application must pass all of the unit tests.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Detailed Requirements
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+    The "Blog Post" component should have two input fields: one for the post title and another for the post description (textarea).
+    The application should display a "Create" button that, when clicked, adds a new blog post to the list of existing posts.
+    The "Create" button should only add a post if both the title and description fields have values. If either field is empty, the button should not create a post.
+    Once a post is successfully created, both the title and description fields should be cleared.
+    The list of created blog posts should be displayed in a grid layout, with each post appearing inside a box.
+    Each box should include:
+        The post's title.
+        The post's description.
+        A "Delete" button to remove the specific post from the list.
 
-## Deploy Your Own
 
-Deploy your own Vite project with Vercel.
+Sample Interaction
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+Initial State
 
-_Live Example: https://vite-react-example.vercel.app_
+    The title and description fields are empty.
+    No blog posts are displayed.
 
-### Deploying From Your Terminal
+User Action 1
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+    User enters a title and description in the respective input fields.
+    User clicks the "Create" button.
+    The new post is added to the grid with the entered title and description.
+    The input fields are cleared.
 
-```shell
-$ vercel
-```
+User Action 2
+
+    User clicks the "Delete" button next to a blog post.
+    The selected blog post is removed from the grid.
+
+
+# [HackerRank Blog Post Challenge](https://www.hackerrank.com/challenges/blog-post/)
+
+![screenshot-sample](./public/images/Screenshot.jpg)
